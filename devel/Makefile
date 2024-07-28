@@ -1396,6 +1396,7 @@
     SUBDIR += libqt6xdg
     SUBDIR += libqtxdg
     SUBDIR += libr3
+    SUBDIR += librashader
     SUBDIR += librcc
     SUBDIR += librcd
     SUBDIR += libreadline-java
