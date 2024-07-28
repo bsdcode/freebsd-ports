@@ -1,0 +1,11 @@
+--- nall/GNUmakefile.orig	2024-07-30 14:21:23 UTC
++++ nall/GNUmakefile
+@@ -182,8 +182,6 @@ else ifeq ($(build),optimized)
+ else ifeq ($(build),optimized)
+   ifeq ($(cl),true)
+     flags += -O2
+-  else
+-    flags += -O3
+   endif
+   flags += -DBUILD_OPTIMIZED
+ else

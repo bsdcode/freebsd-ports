@@ -5,6 +5,7 @@
     SUBDIR += anese
     SUBDIR += aqemu
     SUBDIR += aranym
+    SUBDIR += ares
     SUBDIR += atari800
     SUBDIR += bfe
     SUBDIR += bochs
