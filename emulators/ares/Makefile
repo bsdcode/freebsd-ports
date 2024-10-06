@@ -1,17 +1,7 @@
 PORTNAME=	ares
-DISTVERSIONPREFIX=	v
-DISTVERSION=	140
-PORTREVISION=	1
+# DISTVERSIONPREFIX=	v
+DISTVERSION=	140.20241005
 CATEGORIES=	emulators
-
-# committed upstream, remove with next version update
-# * contains 'unbreak FreeBSD build'
-#   https://github.com/Themaister/Granite/pull/135
-# * contains 'NVIDIA fix'
-#   https://github.com/ares-emulator/ares/issues/1547
-#   https://github.com/Themaister/Granite/issues/133
-PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${PORTNAME}/commit/
-PATCHFILES=	7135646c447ab7eb3eff18132dbddf7dc03135fa.patch:-p1
 
 MAINTAINER=	bsdcode@disroot.org
 COMMENT=	Multi-system emulator
@@ -24,6 +14,7 @@ USES=		compiler:c++17-lang gmake gnome localbase:ldflags pkgconfig \
 		xorg
 USE_GITHUB=	yes
 GH_ACCOUNT=	ares-emulator
+GH_TAGNAME=	bc2a54800fe8013d12e4a8f549854595a66826dc
 USE_GNOME=	gtksourceview3
 USE_XORG=	x11 xext xrandr
 
