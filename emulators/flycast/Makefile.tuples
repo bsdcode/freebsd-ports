@@ -1,0 +1,20 @@
+GH_TUPLE= \
+	libsdl-org:SDL:79ec168f3c1e2fe27335cb8886439f7ef676fb49:SDL/core/deps/SDL \
+	rtissera:libchdr:9b6ff6c3c24311750096232a05ee9c5b4963e66c:libchdr/core/deps/libchdr \
+	vinniefalco:LuaBridge:fab7b33b896a42dcc865ba5ecdbacd9f409137f8:LuaBridge/core/deps/luabridge \
+	flyinghead:mingw-breakpad:1ab24bcc817ebe629bf77daa53529d02361cb1e9:mingwbreakpad/core/deps/breakpad \
+	KhronosGroup:Vulkan-Headers:85c2334e92e215cce34e8e0ed8b2dce4700f4a50:VulkanHeaders/core/deps/Vulkan-Headers \
+	GPUOpen-LibrariesAndSDKs:VulkanMemoryAllocator:6eb62e1515072827db992c2befd80b71b2d04329:VulkanMemoryAllocator/core/deps/VulkanMemoryAllocator \
+	KhronosGroup:glslang:76b52ebf77833908dc4c0dd6c70a9c357ac720bd:glslang/core/deps/glslang \
+	google:oboe:03242e9ef9495e418e6ae83954d239dc9193ec5c:oboe/core/deps/oboe \
+	vkedwardli:Syphon-Framework:486dd8e4ef3bead482ea26de99770f4389e24e37:SyphonFramework/core/deps/Syphon \
+	vkedwardli:Spout2:2110a918e720688f3cb2118302fd153db8745ace:Spout2/core/deps/Spout \
+	harmonytf:discord-rpc:c62c34d37cd90b75187a1212e13ce4145bafbdd7:discordrpc/core/deps/discord-rpc \
+	bylaws:libadrenotools:5deac9f1ab2bd833ad664bc3386ac1e8998cecb3:libadrenotools/core/deps/libadrenotools \
+	RetroAchievements:rcheevos:563230b1c249774b4852c944dc7cdcb952c9e8e8:rcheevos/core/deps/rcheevos \
+	google:googletest:e39786088138f2749d64e9e90e0f9902daa77c40:googletest/core/deps/googletest \
+	Tencent:rapidjson:8261c1ddf43f10de00fd8c9a67811d1486b2c784:rapidjson/core/deps/discord-rpc/thirdparty/rapidjson \
+	google:googletest:ba96d0b1161f540656efdaed035b3c062b60e006:googletest/core/deps/discord-rpc/thirdparty/rapidjson/thirdparty/gtest \
+	bylaws:liblinkernsbypass:2f8df932534999196751dde3e0302f83ef1f4513:liblinkernsbypass/core/deps/libadrenotools/lib/linkernsbypass \
+	google:googletest:58f3f1005cffce8a9d005d0361d3471cd9947501:googletest/core/deps/luabridge/third_party/gtest \
+
