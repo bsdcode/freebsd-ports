@@ -1,4 +1,9 @@
 bin/ares
+%%TOOLS%%bin/genius
+%%TOOLS%%bin/i8080
+%%TOOLS%%bin/mame2bml
+%%TOOLS%%bin/mia
+bin/sourcery
 share/applications/ares.desktop
 %%DATADIR%%/Database/Arcade.bml
 %%DATADIR%%/Database/BS Memory.bml
