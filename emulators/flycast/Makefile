@@ -1,7 +1,7 @@
 PORTNAME=	flycast
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	emulators
 
 MAINTAINER=	bsdcode@disroot.org
@@ -52,6 +52,7 @@ PULSEAUDIO_LIB_DEPENDS=	libpulse.so:audio/pulseaudio
 PULSEAUDIO_CMAKE_BOOL=	USE_PULSEAUDIO
 
 VULKAN_BUILD_DEPENDS=	glslang:graphics/glslang \
+			spirv-tools>0:graphics/spirv-tools \
 			vulkan-headers>0:graphics/vulkan-headers
 VULKAN_CMAKE_BOOL=	USE_HOST_GLSLANG USE_VULKAN
 
