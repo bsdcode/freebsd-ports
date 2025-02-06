@@ -1371,6 +1371,7 @@
     SUBDIR += libmpcbdm
     SUBDIR += libmsiecf
     SUBDIR += libmsocket
+    SUBDIR += libmt32emu
     SUBDIR += libmtdev
     SUBDIR += libmtrie
     SUBDIR += libmustache
