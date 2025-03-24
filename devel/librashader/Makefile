@@ -1,7 +1,6 @@
 PORTNAME=	librashader
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.6.2
-PORTREVISION=	3
+DISTVERSION=	0.7.1
 CATEGORIES=	devel
 
 MAINTAINER=	bsdcode@disroot.org
@@ -13,7 +12,7 @@ LICENSE_COMB=	multi
 LICENSE_FILE_GPLv3=	${WRKSRC}/LICENSE-GPL.md
 LICENSE_FILE_MPL20=	${WRKSRC}/LICENSE.md
 
-BUILD_DEPENDS=	patchelf:sysutils/patchelf
+BUILD_DEPENDS=	patchelf>0:sysutils/patchelf
 
 USES=		cargo
 USE_GITHUB=	yes
