@@ -1,7 +1,6 @@
 PORTNAME=	ares
 DISTVERSIONPREFIX=	v
-DISTVERSION=	145
-PORTREVISION=	1
+DISTVERSION=	146
 CATEGORIES=	emulators
 MASTER_SITES=	https://github.com/${PORTNAME}-emulator/${PORTNAME}/releases/download/${DISTVERSIONFULL}/
 DISTNAME=	${PORTNAME}-source
@@ -157,8 +156,6 @@ SG_VARS=			_CORES+=sg
 
 SPEC_VARS=			_CORES+=spec
 
-# https://github.com/ares-emulator/ares/issues/2090
-TOOLS_IMPLIES=			GBA MD NG SFC
 TOOLS_CMAKE_BOOL=		ARES_BUILD_OPTIONAL_TARGETS
 
 UDEV_LIB_DEPENDS=		libudev.so:devel/libudev-devd
@@ -167,6 +164,20 @@ UDEV_CMAKE_BOOL=		ARES_ENABLE_UDEV
 USBHID_CMAKE_BOOL=		ARES_ENABLE_USBHID
 
 WS_VARS=			_CORES+=ws
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MTOOLS} && (${PORT_OPTIONS:MGBA} || ${PORT_OPTIONS:MSFC})
+PLIST_SUB+=	TOOLSARM7TDMI=""
+.else
+PLIST_SUB+=	TOOLSARM7TDMI="@comment "
+.endif
+
+.if ${PORT_OPTIONS:MTOOLS} && (${PORT_OPTIONS:MMD} || ${PORT_OPTIONS:MNG})
+PLIST_SUB+=	TOOLSM68000=""
+.else
+PLIST_SUB+=	TOOLSM68000="@comment "
+.endif
 
 post-patch:
 	${REINPLACE_CMD} 's|/usr/local|${LOCALBASE}|g' \
